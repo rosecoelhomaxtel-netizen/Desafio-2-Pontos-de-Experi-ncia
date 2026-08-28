@@ -1,11 +1,11 @@
-// Desafio de Código: A Jornada do Herói (DIO)
+// Desafio de Código: Pontos de Experiência (DIO)
 
-function jornadaDoHeroi(posicaoInicial, totalPassos) {
-    const posicaoFinal = posicaoInicial + totalPassos;
-    return `Posicao final do heroi: ${posicaoFinal}`;
+function calcularXP(nivelMonstro, dificuldade) {
+    const xpGanho = nivelMonstro * dificuldade * 100;
+    return `Voce ganhou ${xpGanho} XP!`;
 }
 
-// Exemplos de teste no Node.js
-console.log(jornadaDoHeroi(2, 3));   // Posicao final do heroi: 5
-console.log(jornadaDoHeroi(15, 3));  // Posicao final do heroi: 18
-console.log(jornadaDoHeroi(10, 6));  // Posicao final do heroi: 16
+// Testes locais no Node.js
+console.log(calcularXP(45, 40)); // Voce ganhou 180000 XP!
+console.log(calcularXP(41, 38)); // Voce ganhou 155800 XP!
+console.log(calcularXP(15, 20)); // Voce ganhou 30000 XP!
